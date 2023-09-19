@@ -13,11 +13,13 @@ const getSum = () => {
             }
 	let newRow= document.createElement("tr");
 	let newCell= document.createElement("td");
+	let newCell2= document.createElement("td");
+	newCell2.textContent= "Sum";
 	newCell.textContent= sumVal;
-	newRow.appendChild(newCell);
+	newRow.append(newCell2,newCell);
 	table.appendChild(newRow)
 	
-	 document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+	 // document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
             console.log(sumVal); 
             
   
