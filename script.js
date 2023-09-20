@@ -3,8 +3,9 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 let table= document.getElementById("table");
 
-const getSum = () => {
+const getSum = (event) => {
 //Add your code here
+	event.preventDefault();
 	  var table = document.getElementById("table"), sumVal = 0;
             
             for(var i = 1; i < table.rows.length; i++)
