@@ -16,22 +16,17 @@ const getSum = (event) => {
 	let newCell= document.createElement("td");
 	let newCell2= document.createElement("td");
 	let clicks=0;
-	while(clicks<=0)
-		{
 			newCell2.textContent= "Sum";
 	        newCell.textContent= sumVal;
 	        newRow.append(newCell2,newCell);
 	        table.appendChild(newRow)
 			clicks++;
 			getSumBtn.style.display="none";
-			if(clicks >0)
-			{
-				break;
-			}
-		}
+			
+		
 	
-	 // document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
-            console.log(sumVal); 
+	 document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+ 
             
   
 };
